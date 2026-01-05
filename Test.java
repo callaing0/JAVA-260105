@@ -14,9 +14,10 @@ public class Test {
 		
 		int winCount = 0;
 		int loseCount = 0;
-		int count = 0;
+		int drawCount = 0;
 		
 		for(int i = 1; i <= 15; i++) {
+			
 		int rps = (int)Math.floor(Math.random()*3)+1;
 		
 		System.out.println("\n @@ 가위바위보 대결 @@");
@@ -24,11 +25,10 @@ public class Test {
 		
 		int num = sc.nextInt();		
 		
-		
 		 if (num == rps) {
 			 System.out.println("\n 컴퓨터의 가위바위보 : "+rps+" , 나의 가위바위보 : "+num);
 			 System.out.println("가위바위보 대결에서 비겼습니다");
-			 count++;
+			 drawCount++;
 		 	} else if ((num == 1 && rps == 3) || (num == 2 && rps == 1) || (num == 3 && rps == 2)) {			
 		 		System.out.println("\n 컴퓨터의 가위바위보 : "+rps+" , 나의 가위바위보 : "+num);
 		 		System.out.println("가위바위보 대결에서 이겼습니다");
@@ -38,7 +38,7 @@ public class Test {
 				System.out.println("가위바위보 대결에서 졌습니다");
 				loseCount++;
 		} 
-		 System.out.println("\n 몇승 : "+winCount+", 몇패 : "+loseCount+", 몇무 : "+count);
+		 System.out.println("\n 몇승 : "+winCount+", 몇패 : "+loseCount+", 몇무 : "+drawCount);
 		 System.out.println("--------------------------------------------------------");
 	  }
 	}
