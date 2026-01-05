@@ -11,8 +11,8 @@ public class Test2 {
 	        System.out.print("정답 숫자를 입력하세요 (1 ~ 50): ");
 	        int num = sc.nextInt();
 	        
-	        int min = 0;
-	        int max = 0;
+	        int upcom = 0;
+	        int downcom = 0;
 
 	        while (true) {
 	            int com = (int)(Math.random() * 50) + 1;
@@ -22,14 +22,13 @@ public class Test2 {
 	            String hint = sc.next();
 
 	            if (hint.equals("UP")) {
-	                min = com + 1;
+	                upcom = com + 1;
 	            } else if (hint.equals("DOWN")) {
-	                max = com - 1;
+	                downcom = com - 1;
 	            } else if (hint.equals("정답")) {
-	                System.out.println("정답입니다!");
+	                System.out.println("사용자님이 입력하신 숫자는 "+num+" 입니다.");
 	                break;
 	            }
 	        }
 	    }
 	}
-
