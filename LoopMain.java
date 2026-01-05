@@ -182,9 +182,28 @@ public class LoopMain {
 		
 		// ---------------------------------------------------------------------
 		
+		/* 예시 4 
+		Scanner sc = new Scanner(System.in);
 		
+		int com = (int)Math.floor(Math.random()*50)+1;
+		
+		while(true){
+			System.out.print("숫자를 입력하시오. (1 ~ 50) : ");
+			int user = sc.nextInt();
+			
+				if(user > com) {
+					System.out.println("DOWN");
+				} else if (user < com) {
+					System.out.println("UP");					
+				} else {
+					System.out.println("정답입니다!");	
+					break;
+				}
+			
+		}
+		*/
 	
-		
+		// ---------------------------------------------------------------------
 		
 		
 		
