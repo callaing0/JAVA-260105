@@ -14,22 +14,25 @@ public class Test2 {
 	        // 내가 제시한 숫자
 	        System.out.print("정답 숫자를 입력하세요 (1 ~ 50): ");
 	        int num = sc.nextInt();
-	        
-	        int upcom = 1;
-	        int downcom = 50;
+	        	        
+	        //int mincom = 0;
+	        //int maxcom = 0;
+	        int mincom = 1;
+	        int maxcom = 50;
 
 	        while (true) {
 	        //	int com = (int)(Math.random() * 50) + 1;
-	            int com = (int)(Math.random() *((downcom-upcom)+1)) + upcom;
+	            int com = (int)(Math.random() *((maxcom-mincom)+1)) + mincom;
 	            
 	            System.out.println("컴퓨터가 추측한 숫자는 " +com+ "입니다.");
 	            System.out.print("힌트로 UP / DOWN / 정답을 입력하세요 : ");
 	            String hint = sc.next();
-
+	            
+	            // equals(==)
 	            if (hint.equals("UP")) {
-	                upcom = com + 1;
+	            	mincom = com + 1;
 	            } else if (hint.equals("DOWN")) {
-	                downcom = com - 1;
+	            	maxcom = com - 1;
 	            } else if (hint.equals("정답")) {
 	                System.out.println("사용자님이 입력하신 숫자는 "+num+" 입니다.");
 	                break;
