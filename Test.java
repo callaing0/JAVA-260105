@@ -8,7 +8,7 @@ public class Test {
 		
 		// 과제
 		// 가위바위보 게임을 15번 진행할 것
-		// 단, 한 판이 끝날때마다 몇승, 몇패, 몇무 했는지 출력하기
+		// 단, 한 판이 끝날때마다 몇승, 몇패, 몇무 했는지 출력
 		
 		Scanner sc = new Scanner(System.in);
 		
