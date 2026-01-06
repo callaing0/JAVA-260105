@@ -5,14 +5,18 @@ import java.util.Scanner;
 public class Test2 {
 	public static void main(String[] args) {
 		
+		// 과제 2
+		// 사용자가 입력한 숫자를 컴퓨터가 맞추기
+		// 사용자가 UP, DOWN 힌트를 줄 수 있게 해야함
+		
 		Scanner sc = new Scanner(System.in);
 
 	        // 내가 제시한 숫자
 	        System.out.print("정답 숫자를 입력하세요 (1 ~ 50): ");
 	        int num = sc.nextInt();
 	        
-	        int upcom = 0;
-	        int downcom = 0;
+	        int upcom;
+	        int downcom;
 
 	        while (true) {
 	            int com = (int)(Math.random() * 50) + 1;
