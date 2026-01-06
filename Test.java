@@ -30,6 +30,7 @@ public class Test {
 			 System.out.println("가위바위보 대결에서 비겼습니다");
 			 drawCount++;
 		 	} else if ((num == 1 && rps == 3) || (num == 2 && rps == 1) || (num == 3 && rps == 2)) {			
+		 		// (rps == -2 || rps == 1) 숫자 차이를 이용한 if
 		 		System.out.println("\n 컴퓨터의 가위바위보 : "+rps+" , 나의 가위바위보 : "+num);
 		 		System.out.println("가위바위보 대결에서 이겼습니다");
 		 		winCount++;
