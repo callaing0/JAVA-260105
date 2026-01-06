@@ -26,7 +26,7 @@ public class Test2 {
 	            
 	            System.out.println("컴퓨터가 추측한 숫자는 " +com+ "입니다.");
 	            System.out.print("UP / DOWN / 정답을 입력하세요 : ");
-	            String hint = sc.next();
+	            String hint = sc.nextLine();
 	            
 	            // equals(==)
 	            if (hint.equals("UP")) {
