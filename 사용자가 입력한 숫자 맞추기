@@ -22,7 +22,7 @@ public class Test2 {
 
 	        while (true) {
 	        //	int com = (int)(Math.random() * 50) + 1;
-	            int com = (int)(Math.random() * ((maxcom-mincom+1)) + mincom;
+	            int com = (int)(Math.random() * (maxcom-mincom+1)) + mincom;
 	            
 	            System.out.println("컴퓨터가 추측한 숫자는 " +com+ "입니다.");
 	            System.out.print("UP / DOWN / 정답을 입력하세요 : ");
