@@ -15,11 +15,12 @@ public class Test2 {
 	        System.out.print("정답 숫자를 입력하세요 (1 ~ 50): ");
 	        int num = sc.nextInt();
 	        
-	        int upcom;
-	        int downcom;
+	        int upcom = 1;
+	        int downcom = 50;
 
 	        while (true) {
-	            int com = (int)(Math.random() * 50) + 1;
+	        //	int com = (int)(Math.random() * 50) + 1;
+	            int com = (int)(Math.random() *((downcom-upcom)+1)) + upcom;
 	            
 	            System.out.println("컴퓨터가 추측한 숫자는 " +com+ "입니다.");
 	            System.out.print("힌트로 UP / DOWN / 정답을 입력하세요 : ");
